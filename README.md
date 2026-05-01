@@ -93,7 +93,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 | Role | Email | Password |
 |------|-------|----------|
-| **Admin** | alice@taskmanager.io | Admin@123 |
+| **Admin** | shukla@taskmanager.io | Admin@123 |
 | **Member** | bob@taskmanager.io | Member@123 |
 | **Member** | carol@taskmanager.io | Member@123 |
 

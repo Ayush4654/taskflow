@@ -9,7 +9,7 @@ const seed = async () => {
   const hashedAdmin = await bcrypt.hash('Admin@123', 12);
   const hashedMember = await bcrypt.hash('Member@123', 12);
 
-  const admin = db.prepare(`INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)`).run('Alice Admin', 'alice@taskmanager.io', hashedAdmin, 'admin');
+  const admin = db.prepare(`INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)`).run('Shukla', 'shukla@taskmanager.io', hashedAdmin, 'admin');
   const bob = db.prepare(`INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)`).run('Bob Builder', 'bob@taskmanager.io', hashedMember, 'member');
   const carol = db.prepare(`INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)`).run('Carol Dev', 'carol@taskmanager.io', hashedMember, 'member');
 
@@ -32,7 +32,7 @@ const seed = async () => {
   at.run('Push notification system', 'Firebase integration', 'todo', 'high', p2.lastInsertRowid, bob.lastInsertRowid, admin.lastInsertRowid, '2026-06-01', 10, '["backend"]');
 
   console.log('✅ Seed complete!');
-  console.log('  Admin: alice@taskmanager.io / Admin@123');
+  console.log('  Admin: shukla@taskmanager.io / Admin@123');
   console.log('  Member: bob@taskmanager.io / Member@123');
   console.log('  Member: carol@taskmanager.io / Member@123');
 };

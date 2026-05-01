@@ -48,7 +48,7 @@ function togglePassword(inputId) {
 
 function fillDemo(role) {
   if (role === 'admin') {
-    document.getElementById('loginEmail').value = 'alice@taskmanager.io';
+    document.getElementById('loginEmail').value = 'shukla@taskmanager.io';
     document.getElementById('loginPassword').value = 'Admin@123';
   } else {
     document.getElementById('loginEmail').value = 'bob@taskmanager.io';
