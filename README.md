@@ -70,7 +70,7 @@ A full-stack team task management application with role-based access control, pr
 
 ```bash
 # Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/Ayush4654/taskflow.git
 cd team-task-manager
 
 # Install dependencies
